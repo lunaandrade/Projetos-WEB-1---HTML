@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário de Cadastro</title>
+    </head>
+    <body>
+        <h1>Cadastro de Usuário</h1>
+        <header>
+            <nav>
+                <ul> 
+                    <li><a href="#principal">Página Principal</a></li> 
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li> 
+                    <li><a href="#contato">Contato</a></li>
+                </ul> 
+            </nav>
+        </header>
+
+        <section id="principal">
+            <h3>Formulário de Cadastro</h3>
+            <form action="/enviar_dados" method="post">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha" required><br><br>
+
+                <label for="genero">Gênero: </label>
+                <select id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option> 
+                    <option value="feminino">Feminino</option>
+                </select><br><br>
+
+                <label for="interesses">Interesses: </label><br>
+                <label><input type="checkbox" name="interesses" value="tecnologia">Tecnologia</label><br>
+                <label><input type="checkbox" name="interesses" value="música">Música</label><br>
+                <label><input type="checkbox" name="interesses" value="esportes">Esportes</label><br><br>
+
+                <label for="biografia">Biografia: </label><br>
+                <textarea id="biografia" name="biografia" rows="5" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </body>
+</html>
